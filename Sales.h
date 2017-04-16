@@ -14,7 +14,7 @@ public:
 		virtual ~bad_index() throw() {}
 	};
 	explicit Sales(int yy = 0);
-	Sales(int yy = 0, const double * gr, int n);
+	Sales(int yy, const double * gr, int n);
 	virtual ~Sales() {};
 	int Year() const {return year;}
 	virtual double operator[](int i) const;
@@ -22,7 +22,7 @@ public:
 private:
 		double gross[MONTHS];
 		int year;
-}
+};
 class LabeledSales : public Sales
 {
 
@@ -35,7 +35,7 @@ public:
 		nbad_index(const std::string & lb,int ix,
 			const std::string & s = "Bad index klLabeledSales\n");
 		const std::string & label_val() const {return lbl;}
-		virtual ~nbad_index() throw{}
+		virtual ~nbad_index(){ throw;}
 	
 	};
 	explicit LabeledSales(const std::string & lb = "brak", int yy = 0);
@@ -47,4 +47,4 @@ public:
 private:
 	std::string label;
 
-}
+};

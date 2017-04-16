@@ -7,8 +7,6 @@ using std::string;
 Sales::bad_index::bad_index(int ix, const string & s)
 	: std::logic_error(s),bi(ix)
 {
-
-
 }
 
 Sales::Sales(int yy)
