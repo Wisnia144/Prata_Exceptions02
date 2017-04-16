@@ -9,7 +9,7 @@ int _tmain(int argc, _TCHAR* argv[])
 {
 	using std::cout;
 	using std::cin;
-	using std::endl;
+	using std::endl;////cmnt
 
 	double vals1[12] = 
 	{
