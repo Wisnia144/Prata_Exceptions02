@@ -35,7 +35,7 @@ public:
 		nbad_index(const std::string & lb,int ix,
 			const std::string & s = "Bad index klLabeledSales\n");
 		const std::string & label_val() const {return lbl;}
-		virtual ~nbad_index(){ throw;}
+		virtual ~nbad_index(){ throw; }
 	
 	};
 	explicit LabeledSales(const std::string & lb = "brak", int yy = 0);
